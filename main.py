@@ -12,6 +12,7 @@ from utils import *
 
 def borewein():
     num = initialize()
+    print(num)
 
 def main():
     check_arguments()

@@ -17,11 +17,12 @@ def print_help():
 def initialize():
     try:
         num = int(sys.argv[1])
-    except (Exception) as err:
-        print(err)
+    except (Exception):
+        print("The first argument muste be a integer.")
+        print("Usage: ./110borewein [-h,--help] <num>")
         sys.exit(84)
     if num < 0:
-        print("The number must be a positive number.")
+        print("The first argument must be a positive number.")
         print("Usage: ./110borewein [-h,--help] <num>")
         sys.exit(84)
     return num

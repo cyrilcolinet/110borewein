@@ -9,10 +9,11 @@
 
 import sys
 from utils import *
+from methods import *
 
 def borewein():
     num = initialize()
-    print(num)
+    rectangle_method(num)
 
 def main():
     check_arguments()

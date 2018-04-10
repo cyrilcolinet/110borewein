@@ -9,9 +9,10 @@ import sys
 
 def print_help():
     print("USAGE:")
-    print("\t./110borewein <num>\n")
+    print("\t./110borewein [-h,--help] <num>\n")
     print("DESCRIPTION:")
-    print("\tnum\tconstant defining the integral to be computed")
+    print("\t-h,--help\tdisplay this help page")
+    print("\tnum\t\tconstant defining the integral to be computed")
 
 def initialize():
     try:
@@ -21,7 +22,7 @@ def initialize():
         sys.exit(84)
     if num < 0:
         print("The number must be a positive number.")
-        print("Usage: ./110borewein <num>")
+        print("Usage: ./110borewein [-h,--help] <num>")
         sys.exit(84)
     return num
 
@@ -31,5 +32,5 @@ def check_arguments():
         sys.exit(0)
     elif len(sys.argv) != 2:
         print("Invalid arguments number.")
-        print("Usage: ./110borewein <num>")
+        print("Usage: ./110borewein [-h,--help] <num>")
         sys.exit(0)

@@ -14,6 +14,8 @@ from methods import *
 def borewein():
     num = initialize()
     rectangle_method(num)
+    trapez_method(num)
+    simpson_method(num)
 
 def main():
     check_arguments()
